@@ -4,9 +4,10 @@
   cursor: pointer;
 }
 
-#target {
+#target-show {
   display: none;
 }
-#original {
+
+#og-show {
   display: none;
 }

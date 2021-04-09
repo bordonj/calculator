@@ -81,14 +81,15 @@ $(document).ready(function () {
   $("#original").text(originalSentence);
 
   $("p#dog").click(function() {
-    $("p#target").toggle();
-    $("p#target-hidden").toggle();
-    $("p#original").hide();
-    
+    $("#target-show").toggle();
+    $("#target-hide").toggle();
+    $("#og-show").hide();
   })
 
   $("p#cat").click(function() {
-    $("p#target").toggle();
-    $("p#original").toggle();
+    $("#target-show").toggle();
+    $("#og-show").toggle();
+    $("#target-show").hide();
   })
+
 });
