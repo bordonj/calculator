@@ -1,0 +1,12 @@
+.img-center {
+  width: 300px;
+  border: 3px solid black;
+  cursor: pointer;
+}
+
+#target {
+  display: none;
+}
+#original {
+  display: none;
+}
