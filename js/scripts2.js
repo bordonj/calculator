@@ -81,7 +81,10 @@ $(document).ready(function () {
   $("#original").text(originalSentence);
 
   $("p#dog").click(function() {
-    $("p#target").show();
+    $("p#target").toggle();
+    $("p#target-hidden").toggle();
+    $("p#original").hide();
+    
   })
 
   $("p#cat").click(function() {
