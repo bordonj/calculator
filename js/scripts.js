@@ -55,6 +55,7 @@ $(document).ready(function() {
     const number1 = parseInt($('#op1').val());
     const number2 = parseInt($('#op2').val());
     const operator = $('select#operator').val();
+    let result;
 
     if (operator === 'add') {
       result = add(number1, number2);
@@ -62,7 +63,7 @@ $(document).ready(function() {
       result = subtract(number1, number2)
     } else if (operator === 'divide') {
       result = divide(number1, number2)
-    } else if (operator === 'multply') {
+    } else if (operator === 'multiply') {
       result = multiply(number1, number2)
     } 
     if (isNaN(result)) {
@@ -70,6 +71,30 @@ $(document).ready(function() {
     } else {
       $('#output-all').text(result);
     }
+  })
+
+  $('form#calc').submit(function(event) {
+    event.preventDefault();
+    const number1 = parseFloat($('#radio1').val());
+    const number2 = parseFloat($('#radio2').val());
+    const operator = $('input:radio[name=operator]:checked').val();
+    let result;
+
+    if (operator === 'add') {
+      result = add(number1, number2);
+    } else if (operator === 'subtract') {
+      result = subtract(number1, number2);
+    } else if (operator === 'divide') {
+      result = divide(number1, number2);
+    } else if (operator === 'multiply') {
+      result = multiply(number1, number2);
+    }
+    if (isNaN(result)) {
+      alert('please enter a number');
+    } else {
+      $('#radio-all').text(result);
+    }
+    
   })
 });
 
