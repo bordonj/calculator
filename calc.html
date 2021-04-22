@@ -75,6 +75,72 @@
         </div>
       </div>
     </div> 
+    <!-- below uses the selector type -->
+    <div class='select'>
+      <div class='col-4'>
+        <form id='operations'>
+          <div class='form-group'>
+            <label for='op1'>1st number</label>
+            <input id='op1' type='text' class='form-control'>
+          </div>
+          <div class='form-group'>
+            <label for='op2'>2nd Number</label>
+            <input id='op2' type='text' class='form-control'>
+          </div>
+          <select id='operator'>
+            <option value='add'>Add</option>
+            <option value='subtract'>Subtract</option>
+            <option value='divide'>Divide</option>
+            <option value='multiply'>Multiply</option>
+          </select>
+          <button type='submit' class='btn btn-danger'>Calculate</button>
+        </form>
+        <div id='output-all' class='select-result'>        
+        </div>
+      </div>
+    </div>
+    <!-- below uses the radio type-->
+    <div class='checked'>
+      <div class='col-4'>
+        <form id='calc'>
+          <div class='form-group'>
+            <label for='op1'>1st number</label>
+            <input id='op1' type='text' class='form-control'>
+          </div>
+          <div class='form-group'>
+            <label for='op2'>2nd Number</label>
+            <input id='op2' type='text' class='form-control'>
+          </div>
+          <div class='radio'>
+            <label>
+              <input type='radio' name ='operator' value='add' checked>
+              add
+            </label>
+          </div>
+          <div class='radio'>
+            <label>
+              <input type='radio' name='operator' value='subtract'>
+              subtract
+            </label>
+          </div>
+          <div class='radio'>
+            <label>
+              <input type='radio' name='operator' value='multiply'>
+              multiply
+            </label>
+          </div>
+          <div class='radio'>
+            <label>
+              <input type='radio' name='operator' value='divide'>
+              divide
+            </label>
+          </div>
+          <button type='submit' class='btn btn-danger'>Go!</button>
+        </form>
+        <div id='radio-all' class='result'>        
+        </div>
+      </div>
+    </div>
   </div>
 </body>
 </html>

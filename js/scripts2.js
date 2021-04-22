@@ -19,6 +19,29 @@ function capFirstLastLetter(sentence) {
 //   return `${firstLetter}${midSentence}${lastLetter}.`
 // };
 
+function sayHi() {
+  return 'hi';
+};
+
+function inputName(name) {
+  return name;
+};
+
+// function greetings() {
+//   console.log('reached greetings function');
+//   sayHi();
+//   // inputName(firstName);
+// };
+
+function greetings(name) {
+  sayHi();
+  inputName(name);
+};
+
+// greetings('Mike');
+console.log('inputName function:', inputName());
+
+
 //THIS CODE IS TO ACCOUNT FOR THE PERIOD
 // let myLastLetter =
 //   sentence[sentence.length - 1] === '.' ?
@@ -37,10 +60,10 @@ function capLastFirstLetter(sentence) {
 
 function callLetters(){
   capFirstLastLetter(sentence);
-  console.log('callLetters sentence var', sentence);
-  console.log('ran callLetters Func capFirstLastLetter', capFirstLastLetter(sentence));
+  // console.log('callLetters sentence var', sentence);
+  // console.log('ran callLetters Func capFirstLastLetter', capFirstLastLetter(sentence));
   capLastFirstLetter(sentence);
-  console.log('ran callLetters Func capLastFirstLetter', capLastFirstLetter(sentence));
+  // console.log('ran callLetters Func capLastFirstLetter', capLastFirstLetter(sentence));
 };
 
 // console.log('callLetters Func', callLetters());
@@ -65,7 +88,7 @@ function countLetters() {
 
 countLetters();
 
-function reverseSentence(countLetters) {
+function reverseSentence() {
   let finalSentence = countLetters();
   let splitSentence = finalSentence.split('');
   let reverseArray = splitSentence.reverse();
@@ -75,7 +98,7 @@ function reverseSentence(countLetters) {
 }
 
 $(document).ready(function () {
-  let finalSentence = reverseSentence(countLetters);
+  let finalSentence = reverseSentence();
   let originalSentence = sentence;
   $("#target").text(finalSentence);
   $("#original").text(originalSentence);
