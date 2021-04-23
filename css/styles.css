@@ -41,7 +41,7 @@
 #operator {
   background-color: black;
   color: white;
-  width: 50px;
+  width: auto;
 }
 
 .btn-danger {
