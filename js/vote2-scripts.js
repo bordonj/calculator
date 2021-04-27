@@ -51,23 +51,15 @@ $(document).ready(function() {
         return;
       }
       return;
+    } else { //thank you felix for helping me fix this with the else line i forget to add! this should be put in
+      if (age < 18) {
+        $('#underage').show();
+        $('#adult').hide();
+      } else {
+        $('#adult').show();
+        $('#underage').hide();
+      }
     }
-    //following code below ignores the alert for the checkbox but does not allow the user to see the information
-    // if (!firstName || !lastName || !city || !age || !zip) {
-    //   return;
-    // }
-    // if (!checked) {
-    //   alert('please agree to terms and conditions');  
-    //   return;
-    // }
-    if (age < 18) {
-      $('#underage').show();
-      $('#adult').hide();
-    } else {
-      $('#adult').show();
-      $('#underage').hide();
-    }
-    // validate();
   });
 });
 
