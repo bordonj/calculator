@@ -51,7 +51,7 @@ $(document).ready(function() {
         return;
       }
       return;
-    } else { //thank you felix for helping me fix this with the else line i forget to add! this should be put in
+    } else { //thank you felix for helping me fix this with the else line i forget to add! this is after the other conditions are checked and thus skipped, then it will show the information only if the previous conditions are not met
       if (age < 18) {
         $('#underage').show();
         $('#adult').hide();

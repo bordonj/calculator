@@ -1,5 +1,5 @@
 function triangle(a, b, c) {
-  if (a + b <= c || a + c <= b || c + b <= a) {
+  if (a + b <= c || a + c <= b || c + b <= a || isNaN(a)||isNaN(b)||isNaN(c)) {
     return 0;
   } else {
     if (a === b && b === c) {
@@ -28,10 +28,10 @@ $(document).ready(function() {
         $(".tri-type").text('Iscoceles');
       } else if (triangleType === 3) {
         $(".tri-type").text('Scalene');
-      }
+      } 
       $("#output1").show();
       $('#output2').hide();
-    } else {
+    } else if (triangleType === 0) {
       $("#output2").show();
       $('#output1').hide();
     }
